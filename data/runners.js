@@ -19,7 +19,7 @@ const runners = [{
     fastest: 9.76
 }]
 
-const runnersByTenOfASecond = [
+const runnersByTenthsOfASecond = [
     {
         min: 9.5,
         max: 9.59,
@@ -39,7 +39,7 @@ const runnersByTenOfASecond = [
             }]
         }, {
             min: 9.7,
-        max: 9.979,
+        max: 9.79,
         runners: [{
             name: "Asafa Powell",
             fastest: 9.72
@@ -53,5 +53,5 @@ const runnersByTenOfASecond = [
     }
 ];
 
-export { runners, runnersByTenOfASecond}
+export { runners, runnersByTenthsOfASecond}
 export default runners;

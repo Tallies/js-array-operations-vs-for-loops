@@ -1,8 +1,8 @@
-import { runnersByTenOfASecond as runners } from "./data/runners.js";
+import { runnersByTenthsOfASecond as runners } from "./data/runners.js";
 
-function runnersFromCategories(runnersByTenthOfASecond) {
+function runnersFromCategories(runnersByTenthsOfASecond) {
     const runners = [];
-    for(const category of runnersByTenthOfASecond) {
+    for(const category of runnersByTenthsOfASecond) {
         for(const runner of category.runners) {
             runners.push(runner);
         }
