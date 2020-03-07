@@ -1,4 +1,4 @@
-import {runnersByTenthsOfASecond as runners} from "./data/runners.js";
+import {runnersByTenthsOfASecond as runners} from "../data/runners.js";
 
 function fastestRunnerNamePerCategory(runnersByTenthsOfASecond) {
     const fastestInCategory = (curFastest, challenger) => curFastest.fastest <= challenger.fastest ? curFastest : challenger;
