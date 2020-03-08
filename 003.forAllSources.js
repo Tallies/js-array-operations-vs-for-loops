@@ -7,5 +7,5 @@ function resetAnswers(answers, start, count) {
     }
 }
 
-console.log("Answers: ", resetAnswers([2, 3, 5, -1, 3])); // [-1, 3, 5, -1, 3]
-console.log("Answers: ", resetAnswers([2, 3, 5, -1, 3], 0, 5)); // [-1, -1, -1, -1, -1]
+console.log("Answers: ", resetAnswers([2, 3, 5, -1, 3])); 
+console.log("Answers: ", resetAnswers([2, 3, 5, -1, 3], 0, 5));
