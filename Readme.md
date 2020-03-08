@@ -1,10 +1,10 @@
 # Array Method Operations vs For Loops
 ## Introduction
-The repository is meant as an training resource for learning how to change common JavaScript/TypeScript for loops patterns into Array method operations. The idempotent array method operation are generally more readable and succinct. 
+The repository is meant as an training resource for learning how to change common JavaScript/TypeScript for loops patterns into Array method operations. The idempotent array method operations are generally more readable and succinct. 
 
-These example was used as part of a [NML](https://nml.co.za) "Learning Channel" session. The way to make use of this resource is to clone the repository and modify the exercise implementations to contain no for loops, and leverage array method operations instead
+These example exercises were used as part of a [NML](https://nml.co.za) "Learning Channel" session.
 
-#Getting Started
+## Getting Started
 1. Clone this repository.
 1. Install [deno](https://deno.land).
 1. Run an exercise script with `deno <SCRIPT_NAME>` to see output, for example: `deno 001.hasNine.js`.
