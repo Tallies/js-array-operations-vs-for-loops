@@ -8,4 +8,4 @@ function runnerNames(runners){
     return runnerNames;
 }
 
-console.log("Runners: ", runnerNames(runners));
+console.log("Runners Names: ", runnerNames(runners));

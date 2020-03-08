@@ -1,30 +1,58 @@
-// Constructing
 const nums = [0, 1, 2, 3];
+
+/*********************************************************************************************/
+/* Constructing                                                                              */
+/*********************************************************************************************/
+
 console.log("[0, 1, 2, 3]: ", nums);
 console.log("Array.of: ", Array.of(0, 1, 2, 3));
 console.log('Array(): ', Array(4));
 
-//Mutating YOU SHOULD AVOID USING THESE METHOD, UNLESS YOU'VE MADE A DEEP COPY
-// //push
+/* End of Constructing */
+
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+
+/* Mutating methods: YOU SHOULD AVOID USING THESE METHODS, UNLESS YOU'VE MADE A DEEP COPY */
+
+/*********************************************************************************************/
+/* pop                                                                                       */
+/*********************************************************************************************/
 // const numsCopy = nums;
 // const newCount = nums.push(0);
 // console.log("push: ", newCount, ": ",  nums, "[copy: ", numsCopy, "]");
 
-// //pop
+
+
+/*********************************************************************************************/
+/* pop                                                                                       */
+/*********************************************************************************************/
 // const lastValue = nums.pop();
 // console.log("pop: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
 
-// //reverse
+
+
+/*********************************************************************************************/
+/* reverse                                                                                   */
+/*********************************************************************************************/
 // const reversed = nums.reverse();
 // console.log("reverse: ", reversed)
 // console.log("reverse: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
 
-// //sort
+
+
+/*********************************************************************************************/
+/* sort                                                                                      */
+/*********************************************************************************************/
 // nums.sort();
 // console.log("sort: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
 
 
-// //splice
+/*********************************************************************************************/
+/* splice                                                                                    */
+/*********************************************************************************************/
 // const deleted = nums.splice(2,2);
 // console.log("splice: ", deleted)
 // console.log("splice: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
@@ -36,33 +64,71 @@ console.log('Array(): ', Array(4));
 // console.log("splice2: ", deleted2)
 // console.log("splice2: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
 
-// // concat
+/* End of Mutating methods  */
+
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+
+/* Combining Arrays - Concat & Spread operator */
+
+/*********************************************************************************************/
+/* concat                                                                                    */
+/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat */
+/*********************************************************************************************/
 // const nums2 = [5, 6, 7, 8]
 // const nums3 = nums.concat(nums2);
 // // const nums3 = nums.concat(nums2, 4, 6, [7, 9]);
 // console.log("spread: ", nums, ", nums2: ", nums2, ", nums3: ", nums3);
 
 
-// //Spread
+
+/*********************************************************************************************/
+/* Spread                                                                                    */
+/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax */
+/*********************************************************************************************/
 // const nums2 = [5, 6, 7, 8]
 // const nums3 = [...nums, ...nums2];
 // // const nums3 = [...nums, ...nums2, 4, 6, ...[7, 9]];
 // console.log("spread: ", nums, ", nums2: ", nums2, ", nums3: ", nums3);
 
-// //for
+/* End of Combining Arrays */
+
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+
+/* for loops - for, for...in, for...of */
+
+/*********************************************************************************************/
+/* for                                                                                       */
+/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for          */
+/*********************************************************************************************/
 // for(let index = 0; index < nums.length; index++){
 //     if(nums[index] === 3)
 //         console.log("Found 3");
 // }
 
-// //for..in
+
+
+/*********************************************************************************************/
+/* for..in                                                                                   */
+/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in     */
+/*********************************************************************************************/
 // for(const idx in nums) {
 //     if(nums[idx] === 3) {
 //         console.log("Found 3");
 //     }
 // }
 
-// //for..of
+
+
+/*********************************************************************************************/
+/* for..of                                                                                   */
+/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of     */
+/*********************************************************************************************/
 // for(const num of nums) {
 //     if(num === 3) {
 //         console.log("Found 3");

@@ -2,9 +2,10 @@ import runners from "./data/runners.js";
 
 function fastestRunners(runners, speed) {
     const fastest = [];
-    for(var runner of runners){
-        if(runner.fastest <= speed)
+    for(const runner of runners) {
+        if(runner.fastest <= speed) {
             fastest.push(runner);
+        }
     }
     return fastest;
 }
