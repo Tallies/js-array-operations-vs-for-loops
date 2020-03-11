@@ -14,7 +14,6 @@ These example exercises were used as part of a [NML](https://nml.co.za) "Learnin
 ## Array Method Operations
 The following array method operations are targeted in these exercises:
 * every
-* fill
 * filter
 * find
 * findIndex

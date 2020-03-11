@@ -1,7 +1,8 @@
 import {runnersByTenthsOfASecond as runners} from "../data/runners.js"
 
 function runnerNamesFromCategories(runnersByTenthsOfASecond) {
-    return runnersByTenthsOfASecond.flatMap(category => category.runners)
+    return runnersByTenthsOfASecond
+        .flatMap(category => category.runners)
         .map(runner => runner.name);
 
     /* Using reduce + map */

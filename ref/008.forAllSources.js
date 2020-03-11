@@ -1,8 +1,9 @@
 function resetAnswers(answers, startReset, endReset){
     startReset = startReset || 0;
     endReset = endReset || startReset + 1;
-
-    return answers.fill(-1, startReset, endReset);
+    const shouldReset = index => index >= startReset && index < endReset;
+    
+    return answers.map((answer, index) => shouldReset(index) ? -1 : answer);
 }
 
 console.log("Answers: ", resetAnswers([2, 3, 5, -1, 3])); 

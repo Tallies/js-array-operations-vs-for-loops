@@ -12,12 +12,12 @@ const runners = [{
     name: "Asafa Powell",
     fastest: 9.72
 }, {
-    name: "Justing Gatlin",
+    name: "Justin Gatlin",
     fastest: 9.74
 }, {
     name: "Christian Coleman",
     fastest: 9.76
-}]
+}];
 
 const runnersByTenthsOfASecond = [
     {
@@ -27,7 +27,7 @@ const runnersByTenthsOfASecond = [
             name: "Usain Bolt",
             fastest: 9.58,
             }]
-        },{
+    },{
             min: 9.6,
             max: 9.69,
             runners: [{
@@ -37,14 +37,14 @@ const runnersByTenthsOfASecond = [
                 name: "Yohan Blake",
                 fastest: 9.69
             }]
-        }, {
-            min: 9.7,
+    }, {
+        min: 9.7,
         max: 9.79,
         runners: [{
             name: "Asafa Powell",
             fastest: 9.72
         }, {
-            name: "Justing Gatlin",
+            name: "Justin Gatlin",
             fastest: 9.74
         }, {
             name: "Christian Coleman",

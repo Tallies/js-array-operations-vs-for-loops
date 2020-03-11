@@ -1,12 +1,13 @@
 const nums = [0, 1, 2, 3];
+const numsCopy = nums;
 
 /*********************************************************************************************/
 /* Constructing                                                                              */
 /*********************************************************************************************/
-
-console.log("[0, 1, 2, 3]: ", nums);
-console.log("Array.of: ", Array.of(0, 1, 2, 3));
-console.log('Array(): ', Array(4));
+//
+// console.log("[0, 1, 2, 3]: ", nums);
+// console.log("Array.of: ", Array.of(0, 1, 2, 3));
+// console.log('Array(): ', Array(4));
 
 /* End of Constructing */
 
@@ -18,9 +19,8 @@ console.log('Array(): ', Array(4));
 /* Mutating methods: YOU SHOULD AVOID USING THESE METHODS, UNLESS YOU'VE MADE A DEEP COPY */
 
 /*********************************************************************************************/
-/* pop                                                                                       */
+/* push                                                                                       */
 /*********************************************************************************************/
-// const numsCopy = nums;
 // const newCount = nums.push(0);
 // console.log("push: ", newCount, ": ",  nums, "[copy: ", numsCopy, "]");
 
@@ -35,34 +35,41 @@ console.log('Array(): ', Array(4));
 
 
 /*********************************************************************************************/
+/* fill                                                                                       */
+/*********************************************************************************************/
+// const filled = nums.fill(-1, 1, 3);
+// console.log("fill: ", filled, ": ",  nums, "[copy: ", numsCopy, "]");
+
+
+
+/*********************************************************************************************/
 /* reverse                                                                                   */
 /*********************************************************************************************/
 // const reversed = nums.reverse();
-// console.log("reverse: ", reversed)
-// console.log("reverse: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
+// console.log("reverse: ", reversed, ": ",  nums, "[copy: ", numsCopy, "]");
 
 
 
 /*********************************************************************************************/
 /* sort                                                                                      */
 /*********************************************************************************************/
-// nums.sort();
-// console.log("sort: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
+// const reverse = nums.reverse();
+// console.log("reverse: ", reverse, ", nums: ",  nums, "[copy: ", numsCopy, "]");
+// reverse.sort();
+// console.log("sort: ", reverse, ", nums: ",  nums, "[copy: ", numsCopy, "]");
 
 
 /*********************************************************************************************/
 /* splice                                                                                    */
 /*********************************************************************************************/
 // const deleted = nums.splice(2,2);
-// console.log("splice: ", deleted)
-// console.log("splice: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
-
+// console.log("splice: ", deleted, ": ",  nums, "[copy: ", numsCopy, "]");
+//
 // nums.push(deleted[0]);
 // nums.push(deleted[1]);
-
+//
 // const deleted2 = nums.splice(2,2, 5, 6, 7);
-// console.log("splice2: ", deleted2)
-// console.log("splice2: ", lastValue, ": ",  nums, "[copy: ", numsCopy, "]");
+// console.log("splice2: ", deleted2, ": ",  nums, "[copy: ", numsCopy, "]");
 
 /* End of Mutating methods  */
 
@@ -77,9 +84,9 @@ console.log('Array(): ', Array(4));
 /* concat                                                                                    */
 /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat */
 /*********************************************************************************************/
-// const nums2 = [5, 6, 7, 8]
-// const nums3 = nums.concat(nums2);
-// // const nums3 = nums.concat(nums2, 4, 6, [7, 9]);
+// const nums2 = [5, 6, 7, 8];
+// // const nums3 = nums.concat(nums2);
+// const nums3 = nums.concat(nums2, 4, 6, [7, 9]);
 // console.log("spread: ", nums, ", nums2: ", nums2, ", nums3: ", nums3);
 
 
@@ -88,10 +95,11 @@ console.log('Array(): ', Array(4));
 /* Spread                                                                                    */
 /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax */
 /*********************************************************************************************/
-// const nums2 = [5, 6, 7, 8]
-// const nums3 = [...nums, ...nums2];
-// // const nums3 = [...nums, ...nums2, 4, 6, ...[7, 9]];
+// const nums2 = [5, 6, 7, 8];
+// // const nums3 = [...nums, ...nums2];
+// const nums3 = [...nums, ...nums2, 4, 6, [7, 9]];
 // console.log("spread: ", nums, ", nums2: ", nums2, ", nums3: ", nums3);
+// console.log(...nums3);
 
 /* End of Combining Arrays */
 
