@@ -8,7 +8,7 @@ These example exercises were used as part of a [NML](https://nml.co.za) "Learnin
 1. Clone this repository.
 1. Install [deno](https://deno.land).
 1. Run an exercise script with `deno <SCRIPT_NAME>` to see output, for example: `deno 001.hasNine.js`.
-1. Modify the exercise script to use only the targeted array method operations, without looking at the reference scripts.
+1. Modify the exercise scripts to use only the targeted array method operations below, without looking at the reference scripts.
 1. Run the exercise script again as per step 3.
 
 ## Array Method Operations
@@ -22,6 +22,7 @@ The following array method operations are targeted in these exercises:
 * map
 * reduce
 * reduceRight
+* slice
 * some
 
 Documentation on all these array methods can be found [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
@@ -33,10 +34,10 @@ Documentation on all these array methods can be found [MDN Web Docs](https://dev
  
  `000.array.js` - Background examples on array construction, common mutating array methods, and for loops.
  
- `001.` - `010.` - Exercise for converting for loops to single array method operations.
+ `001.` - `011.` - Exercise for converting for loops to single array method operations.
  
- `011.` - `013.` - More complicated exercises where more than one array method operation will be needed.
- 
+ `012.` - `014.` - More complicated exercises where more than one array method operation will be needed.
+  
  ## Author
  Charl Marais
  
